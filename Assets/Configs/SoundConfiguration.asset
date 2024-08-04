@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3da5b4b5d4cc04d8a9fe1e578e80ef, type: 3}
+  m_Name: SoundConfiguration
+  m_EditorClassIdentifier: 
+  SoundEntries:
+  - Key: Click
+    AudioClip: {fileID: 8300000, guid: 91c96aa89bb72bf4ebd4b5eb2f3b3506, type: 3}
+  - Key: OST
+    AudioClip: {fileID: 8300000, guid: 85d3b2b961522d34c92587f853a016da, type: 3}
+  - Key: Positive
+    AudioClip: {fileID: 8300000, guid: 77048574c137c2849b3d55934693f2eb, type: 3}
+  - Key: Negative
+    AudioClip: {fileID: 8300000, guid: 7849ae383a019ff41b9f7c50bbec8318, type: 3}
+  - Key: WinLevel
+    AudioClip: {fileID: 8300000, guid: 80c5d336f029fc94da684e67b35a7861, type: 3}
