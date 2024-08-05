@@ -63,6 +63,7 @@ namespace MulticastProject.Base
         public virtual async UniTask Animate()
         {
             DOTween.KillAll(this);
+
             switch (_typeAnim)
             {
                 case TypeAnim.Scale:

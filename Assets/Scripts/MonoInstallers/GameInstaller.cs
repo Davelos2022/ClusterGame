@@ -1,4 +1,5 @@
 using MulticastProject.Core;
+using MulticastProject.UI.GameElements;
 using MulticastProject.UI.Screens;
 using Zenject;
 
@@ -36,6 +37,7 @@ namespace MulticastProject.Monoinstallers
             Container.BindInterfacesAndSelfTo<MainMenuScreen>().FromComponentInHierarchy().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<SettingsScreen>().FromComponentInHierarchy().AsSingle().NonLazy();
             Container.BindInterfacesAndSelfTo<VictoryScreen>().FromComponentInHierarchy().AsSingle().NonLazy();
+            Container.BindInterfacesAndSelfTo<Notification>().FromComponentInHierarchy().AsSingle().NonLazy();
         }
     }
 }

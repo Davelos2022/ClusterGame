@@ -2,7 +2,7 @@ using UnityEngine;
 using Zenject;
 using Cysharp.Threading.Tasks;
 using MulticastProject.UI.Screens;
-using MulticastProject.Data;
+using MulticastProject.Models;
 
 namespace MulticastProject.Core
 {

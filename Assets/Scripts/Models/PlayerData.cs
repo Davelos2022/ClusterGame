@@ -1,6 +1,6 @@
 using System;
 
-namespace MulticastProject.Data
+namespace MulticastProject.Models
 {
     [Serializable]
     public class PlayerData

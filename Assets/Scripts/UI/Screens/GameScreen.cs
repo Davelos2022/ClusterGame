@@ -2,6 +2,7 @@ using UnityEngine;
 using MulticastProject.Base;
 using MulticastProject.UI.GameElements;
 using MulticastProject.Data;
+using Zenject;
 
 namespace MulticastProject.UI.Screens
 {
@@ -9,7 +10,12 @@ namespace MulticastProject.UI.Screens
     {
         [SerializeField] private ButtonAnimBase _backBTN;
         [SerializeField] private ButtonAnimBase _checkWords;
-        [SerializeField] private Notification _notification;
+
+
+        private Notification _notification;
+
+        [Inject]
+        public void Construct(Notification notification) => _notification = notification;
 
         private void OnEnable()
         {
@@ -24,7 +30,7 @@ namespace MulticastProject.UI.Screens
         }
 
         private void ClickBack()
-        {         
+        {
             _screenManager.ShowScreen<MainMenuScreen>();
         }
 

@@ -14,7 +14,7 @@ namespace MulticastProject.UI.GameElements
             Positive
         }
 
-        [SerializeField] private Image _iamgePanel;
+        [SerializeField] private Image _imagePanel;
         [SerializeField] private TextMeshProUGUI _contentText;
         [Space]
         [SerializeField] private Sprite _positiveIcon;
@@ -31,7 +31,8 @@ namespace MulticastProject.UI.GameElements
         public void SetContent(string text, TypeNotification typeNotification)
         {
             _contentText.text = text;
-            _iamgePanel.sprite = typeNotification == TypeNotification.Positive ? _positiveIcon : _negativeIcon;
+            _imagePanel.sprite = typeNotification == TypeNotification.Positive ? _positiveIcon : _negativeIcon;
+            _imagePanel.preserveAspect = true;
             ShowPanel();
         }
 
