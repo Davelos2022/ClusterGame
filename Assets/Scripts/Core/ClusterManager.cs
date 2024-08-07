@@ -12,9 +12,6 @@ namespace MulticastProject.Core
     public class ClusterManager : MonoBehaviour
     {
         [SerializeField] private Transform _wordsContainer;
-        [SerializeField] private GameObject _wordPrefab;
-        [Space]
-        [SerializeField] private LetterCluster _letterClusterPrefab;
         [SerializeField] private Transform _clusterContainer;
 
         private LevelManager _levelManager;
@@ -68,8 +65,6 @@ namespace MulticastProject.Core
         private void CreateWord()
         {
             ClearContent(_wordsContainer);
-
-            if (_wordPrefab == null || _wordsContainer == null) return;
 
             _words = new WordContainer[_levelManager.CurrentLevel.WordDatas.Length];
 
